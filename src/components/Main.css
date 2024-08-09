@@ -1,0 +1,162 @@
+.main {
+    background-color: #ddd;
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+    font-family: sans-serif;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px;
+    height: 59px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.main-nav a i {
+    margin-right: 8px;
+    color: green;
+}
+
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    margin-bottom: 2px;
+    border-bottom: 3px solid green;
+    transition: .4s;
+}
+
+.projectOverview {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.projectOverview h2 {
+    font-size: 21px;
+}
+.projectOverview .ongoing{
+    font-size: 20px;
+    font-family: "Archivo Black", sans-serif;
+}
+.projectOverview .details span{
+    margin-left: 2px;
+}
+.projectOverview .details p i{
+    color: green;
+    margin-right: 7px;
+}
+
+.details p {
+    margin: 7px 0;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: green;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-percent {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+}
+
+.budget-container {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.budget-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.budget-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.budget-info {
+    flex: 1;
+}
+
+.budget-chart {
+    flex: 1;
+}
+
+.budget-chart canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav a {
+        margin-bottom: 10px;
+    }
+
+    .projectOverview,
+    .budget-container {
+        margin-top: 20px;
+    }
+
+    .progress-bar {
+        height: 25px;
+    }
+
+    .progress-percent {
+        line-height: 25px;
+    }
+
+    .budget-content {
+        flex-direction: column;
+    }
+
+    .budget-chart {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+.resource-management {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.chart canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .chart {
+        margin-bottom: 20px;
+    }
+}
