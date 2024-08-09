@@ -9,7 +9,7 @@ const Navbar = () => {
             </div>
             <div className="nav-links">
                 <i className="fa-solid fa-bell"></i>
-                <i className="fa-solid fa-gear"></i>
+                <i className="fa-solid fa-user"></i>
             </div>
         </div>
     );

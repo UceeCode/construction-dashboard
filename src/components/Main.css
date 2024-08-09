@@ -13,6 +13,7 @@
     padding: 15px;
     height: 59px;
     border-radius: 5px;
+    border: 1px solid green;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .main-nav a i {
@@ -163,7 +164,50 @@
     height: auto;
 }
 
+.resource-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+    margin: 40px 0;  
+    flex-wrap: wrap; 
+}
+
+.resource-allocation, .hours-worked {
+    border: 1px solid green;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 685px; 
+    height: 340px;  
+}
+
+.resource-allocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hours-worked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .chart {
+        margin-bottom: 20px;
+    }
+
     .main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -192,5 +236,15 @@
 
     .budget-chart {
         margin-top: 20px;
+    }
+
+    .resource-allocation, .hours-worked {
+        width: 100%;
+        height: auto;
+    }
+
+    .resource-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
