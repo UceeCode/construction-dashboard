@@ -84,7 +84,6 @@ const Main = () => {
                 </div>
             </div>
 
-            {/* <ResourceManagement /> */}
         </div>
     );
 };
