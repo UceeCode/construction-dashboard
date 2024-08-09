@@ -1,5 +1,5 @@
 .main {
-    background-color: #ddd;
+    background-color: #F0FAF0;
     padding: 20px;
     min-height: calc(100vh - 60px);
     font-family: sans-serif;
@@ -41,8 +41,23 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+.project-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-head p {
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+}
+.project-head p:hover{
+    margin-bottom: 2px;
+    border-bottom: 3px solid green;
+    transition: .4s;
+}
 .projectOverview h2 {
-    font-size: 21px;
+    font-size: 20px;
 }
 .projectOverview .ongoing{
     font-size: 20px;
@@ -106,7 +121,8 @@
 }
 
 .budget-title {
-    font-size: 18px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -114,6 +130,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.budget-info p {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.budget-info p i{
+    margin-right: 8px;
+    color: green;
 }
 
 .budget-info {
@@ -125,8 +151,8 @@
 }
 
 .budget-chart canvas {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {

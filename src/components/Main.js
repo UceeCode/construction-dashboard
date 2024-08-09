@@ -1,7 +1,6 @@
 import React from "react";
 import './Main.css';
 import { Bar } from 'react-chartjs-2';
-import ResourceManagement from "./ResourceManagement";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
@@ -52,7 +51,10 @@ const Main = () => {
             </div>
 
             <div className="projectOverview">
-                <h2><span className="ongoing">ONGOING PROJECT:</span> Construction of Five Star Hotel</h2>
+                <div className="project-head">
+                    <h2><span className="ongoing">ONGOING PROJECT:</span> Construction of Five Star Hotel</h2>
+                    <p>Show more</p>
+                </div>
                 <div className="details">
                     <p><strong><i class="fa-regular fa-user"></i><span>Client:</span></strong> Five Star Corporation</p>
                     <p><strong><i class="fa-solid fa-power-off"></i>Start Date:</strong> January 1, 2024</p>
@@ -68,19 +70,19 @@ const Main = () => {
                 </div>
             </div>
 
-            {/* <div className="budget-container">
+            <div className="budget-container">
                 <div className="budget-title">Budget Overview</div>
                 <div className="budget-content">
                     <div className="budget-info">
-                        <p><strong>Allocated Budget:</strong> $5,000,000</p>
-                        <p><strong>Spent:</strong> $3,500,000</p>
-                        <p><strong>Remaining:</strong> $1,500,000</p>
+                        <p><strong><i class="fa-solid fa-circle-dollar-to-slot"></i>Allocated Budget:</strong> $5,000,000</p>
+                        <p><strong><i class="fa-solid fa-money-check-dollar"></i>Spent:</strong> $3,500,000</p>
+                        <p><strong><i class="fa-solid fa-vault"></i>Remaining:</strong> $1,500,000</p>
                     </div>
                     <div className="budget-chart">
                         <Bar data={data} options={options} />
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             {/* <ResourceManagement /> */}
         </div>
