@@ -114,7 +114,6 @@ const Main = () => {
 
             <div className="resource-container">
                 <div className="resource-allocation">
-                    {/* <h3 className="resource-title">Resource Allocation</h3> */}
                     <PieChart width={500} height={500}>
                         <Pie 
                             data={pieData} 

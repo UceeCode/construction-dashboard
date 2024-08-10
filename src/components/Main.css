@@ -29,11 +29,11 @@
     text-transform: uppercase;
 }
 
-.main-nav a:hover {
+/* .main-nav a:hover {
     margin-bottom: 2px;
     border-bottom: 3px solid green;
     transition: .4s;
-}
+} */
 
 .projectOverview {
     margin-top: 40px;
@@ -210,20 +210,53 @@
 
     .main-nav {
         flex-direction: column;
+        height: 185px;
         align-items: flex-start;
+        border: none;
     }
 
     .main-nav a {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 15px;
     }
+
+    .main-nav a i {
+        margin-right: 12px;
+    }
+
 
     .projectOverview,
     .budget-container {
         margin-top: 20px;
     }
 
+    .projectOverview .project-head {
+        margin-bottom: 15px;
+    }
+
+    .projectOverview .project-head h2{
+        font-size: 15px;
+    }
+
+    .projectOverview .project-head span{
+        font-size: 15px;
+    }
+    
+    .projectOverview .project-head p{
+       display: none;
+    }
+
+    .projectOverview .details p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .progress-title {
+        font-size: 14px;
+    }
+
     .progress-bar {
-        height: 25px;
+        height: 22px;
     }
 
     .progress-percent {
@@ -232,6 +265,14 @@
 
     .budget-content {
         flex-direction: column;
+    }
+
+    .budget-container .budget-title{
+        font-size: 15px;
+    }
+
+    .budget-info p {
+        font-size: 14px;
     }
 
     .budget-chart {
