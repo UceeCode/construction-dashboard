@@ -99,8 +99,8 @@ const Main = () => {
                 </div>
                 <div className="details">
                     <p><strong><i className="fa-regular fa-user"></i><span>Client:</span></strong> Five Star Corporation</p>
-                    <p><strong><i className="fa-solid fa-power-off"></i>Start Date:</strong> January 1, 2024</p>
-                    <p><strong><i className="fa-regular fa-circle-check"></i>Estimated Completion:</strong> December 31, 2024</p>
+                    <p><strong><i className="fa-solid fa-power-off start"></i>Start Date:</strong> January 1, 2024</p>
+                    <p><strong><i className="fa-regular fa-circle-check end"></i>Estimated Completion:</strong> December 31, 2024</p>
                 </div>
 
                 <div className="progress-container">

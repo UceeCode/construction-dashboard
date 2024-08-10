@@ -1,5 +1,5 @@
 .main {
-    background-color: #F0FAF0;
+    background-color: #1A1A1A;
     padding: 20px;
     min-height: calc(100vh - 60px);
     font-family: sans-serif;
@@ -9,20 +9,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    background-color: black;
     padding: 15px;
     height: 59px;
     border-radius: 5px;
-    border: 1px solid green;
+    border: 1px solid white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .main-nav a i {
     margin-right: 8px;
-    color: green;
+    color: white;
 }
 
 .main-nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -37,7 +37,8 @@
 
 .projectOverview {
     margin-top: 40px;
-    background-color: white;
+    background-color: black;
+    color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -49,12 +50,12 @@
 }
 .project-head p {
     font-weight: bold;
-    color: green;
+    color: white;
     cursor: pointer;
 }
 .project-head p:hover{
     margin-bottom: 2px;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid white;
     transition: .4s;
 }
 .projectOverview h2 {
@@ -64,12 +65,22 @@
     font-size: 20px;
     font-family: "Archivo Black", sans-serif;
 }
+
 .projectOverview .details span{
     margin-left: 2px;
 }
+
 .projectOverview .details p i{
-    color: green;
+    color: blue;
     margin-right: 7px;
+}
+
+.projectOverview .details p .start{
+    color: green;
+}
+
+.projectOverview .details p .end{
+    color: red;
 }
 
 .details p {
@@ -115,7 +126,8 @@
 
 .budget-container {
     margin-top: 40px;
-    background-color: white;
+    background-color: black;
+    color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -174,8 +186,9 @@
 }
 
 .resource-allocation, .hours-worked {
-    border: 1px solid green;
-    background-color: white;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
