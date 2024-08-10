@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/construction-dashboard/static/css/main.9f99b2a9.css",
+    "main.js": "/construction-dashboard/static/js/main.3f273573.js",
+    "static/js/453.47ed3e64.chunk.js": "/construction-dashboard/static/js/453.47ed3e64.chunk.js",
+    "index.html": "/construction-dashboard/index.html",
+    "main.9f99b2a9.css.map": "/construction-dashboard/static/css/main.9f99b2a9.css.map",
+    "main.3f273573.js.map": "/construction-dashboard/static/js/main.3f273573.js.map",
+    "453.47ed3e64.chunk.js.map": "/construction-dashboard/static/js/453.47ed3e64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f99b2a9.css",
+    "static/js/main.3f273573.js"
+  ]
+}
