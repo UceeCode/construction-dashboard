@@ -1,5 +1,5 @@
 .main {
-    background-color: #1A1A1A;
+    background-color: #F0FAF0;
     padding: 20px;
     min-height: calc(100vh - 60px);
     font-family: sans-serif;
@@ -9,36 +9,35 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
     padding: 15px;
     height: 59px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid green;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .main-nav a i {
+    color: green;
     margin-right: 8px;
-    color: white;
 }
 
 .main-nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
 }
-
-/* .main-nav a:hover {
-    margin-bottom: 2px;
-    border-bottom: 3px solid green;
-    transition: .4s;
-} */
+.main-nav span{
+    position: relative;
+    left: 3px;
+}
+.main-nav a:hover {
+   
+}
 
 .projectOverview {
     margin-top: 40px;
-    background-color: black;
-    color: white;
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -126,8 +125,7 @@
 
 .budget-container {
     margin-top: 40px;
-    background-color: black;
-    color: white;
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -186,17 +184,23 @@
 }
 
 .resource-allocation, .hours-worked {
-    border: 1px solid white;
-    background-color: black;
-    color: white;
+    border: 1px solid green;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 685px; 
     height: 340px;  
+    transition: transform 0.4s ease;
+}
+
+.hours-worked:hover{
+    transform: scale(1.05);
+}
+.resource-allocation:hover{
+    transform: scale(1.01);
 }
 
 .resource-allocation {
@@ -226,16 +230,22 @@
         height: 185px;
         align-items: flex-start;
         border: none;
+        box-shadow: none;
     }
 
     .main-nav a {
-        margin-bottom: 25px;
-        font-size: 15px;
+        margin-bottom: 28px;
+        font-size: 14px;
     }
 
     .main-nav a i {
         margin-right: 12px;
     }
+
+    .main-nav a:hover {
+        margin-left: 10px;
+        transition: 0.4s;
+     }
 
 
     .projectOverview,
@@ -295,6 +305,8 @@
     .resource-allocation, .hours-worked {
         width: 100%;
         height: auto;
+        border: none;
+        box-shadow: none;
     }
 
     .resource-container {

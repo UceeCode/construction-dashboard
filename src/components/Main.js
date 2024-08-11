@@ -86,10 +86,10 @@ const Main = () => {
     return (
         <div className="main">
             <div className="main-nav">
-                <a href="#"><i class="fa-solid fa-building"></i>Project Overview</a>
-                <a href="#"><i class="fa-solid fa-list-check"></i>Resource Management</a>
-                <a href="#"><i class="fa-solid fa-chart-line"></i>Budget Tracking</a>
-                <a href="#"><i class="fa-solid fa-file-contract"></i>Schedule</a>
+                <a href="#"><i className="fa-solid fa-building"></i><span>Project Overview</span></a>
+                <a href="#"><i className="fa-solid fa-list-check"></i>Resource Management</a>
+                <a href="#"><i className="fa-solid fa-chart-line"></i>Budget Tracking</a>
+                <a href="#"><i className="fa-solid fa-file-contract"></i><span>Schedule</span></a>
             </div>
 
             <div className="projectOverview">
