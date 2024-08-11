@@ -1,0 +1,92 @@
+.footer {
+    background-color: green;
+    color: white;
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-section ul li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: white;
+    margin-right: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 8px 18px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}
+
+body.dark-mode .footer{
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+    .footer-section p, .footer-section a {
+        font-size: 11px;
+    }
+
+    .footer-section h4{
+        font-size: 16px;
+    }
+
+    form input{
+        padding: 6px;
+    }
+
+    form button{
+        padding: 6px 14px;
+    }
+}
