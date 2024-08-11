@@ -215,6 +215,34 @@
     align-items: center;
 }
 
+/* DARK MODE STYLES */
+
+body.dark-mode {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .main {
+    background-color: #1A1A1A;
+}
+
+body.dark-mode .main-nav a{
+    color: white;
+}
+
+body.dark-mode .main-nav i {
+    color: white;
+}
+
+body.dark-mode .main-nav, 
+body.dark-mode .projectOverview, 
+body.dark-mode .budget-container,
+body.dark-mode .resource-allocation, 
+body.dark-mode .hours-worked {
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
+    border-color: #ffffff; /* White borders */
+}
+
 
 @media (max-width: 768px) {
     .chart-container {
